@@ -6,4 +6,4 @@ RUN  apk add --no-cache bash && \
      chmod -R 777 sdk && \
      ln -s /sdk/tools/neo.sh /usr/bin/neo.sh && \
      rm -rf /var/lib/apt/lists/*
-RUN  ls /sdk      
+RUN  echo '{"Users":[{"UID":"int-test","Password":"{SSHA}YkHqSKxgRoM6wn0XzdOxFmRSgvvB1lUw","Roles":["Administrator"],"Attributes":[{"attributeName":"firstname","attributeValue":"Integration"},{"attributeName":"lastname","attributeValue":"Test"},{"attributeName":"email","attributeValue":"int.test@masterdata.ru"}]}]}' > '/sdk/server/config_master/com.sap.security.um.provider.neo.local/neousers.json'  
