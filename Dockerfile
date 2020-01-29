@@ -7,4 +7,4 @@ RUN  apk add --no-cache bash && \
      ln -s /sdk/tools/neo.sh /usr/bin/neo.sh && \
      rm -rf /var/lib/apt/lists/*
 RUN  mkdir -p '/sdk/server/config_master/com.sap.security.um.provider.neo.local' 
-RUN  echo '{"Users":[{"UID":"int-test","Password":"{SSHA}YkHqSKxgRoM6wn0XzdOxFmRSgvvB1lUw","Roles":["Administrator"],"Attributes":[{"attributeName":"firstname","attributeValue":"Integration"},{"attributeName":"lastname","attributeValue":"Test"},{"attributeName":"email","attributeValue":"int.test@masterdata.ru"}]}]}' > '/sdk/server/config_master/com.sap.security.um.provider.neo.local/neousers.json'  
+RUN  echo '{"Users":[{"UID":"int-test","Password":"{SSHA}OPFlBj4ic6G5LCMyE8v5dLoeGp8bD5K3","Roles":["Administrator"],"Attributes":[{"attributeName":"firstname","attributeValue":"Integration"},{"attributeName":"lastname","attributeValue":"Test"},{"attributeName":"email","attributeValue":"int.test@masterdata.ru"}]}]}' > '/sdk/server/config_master/com.sap.security.um.provider.neo.local/neousers.json'  
