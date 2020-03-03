@@ -1,5 +1,6 @@
 FROM maven:3.6-jdk-8
 
+RUN   adduser --uid 1000 --ingroup sudo builduser
 RUN   apt-get update 
 RUN   apt-get install bash
 RUN   mvn com.sap.cloud:neo-java-web-maven-plugin:3.96.20:install-sdk -DsdkInstallPath=sdk
